@@ -6,7 +6,7 @@ const Gallery = () => {
 
   return (
     <div className="2xl:flex 2xl:justify-center flex  justify-center items-center ">
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full max-sm:content-center  px-10   py-10 2xl:w-[1440px]">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full max-sm:content-center  px-10  max-sm:px-5  py-10 2xl:w-[1440px]">
         <div className="grid gap-8">
           {data.slice(0, 4).map(item => (
             <Link to={`/gallery/${item.id}`} key={item.id}>
