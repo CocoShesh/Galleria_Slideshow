@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useGallery } from "../../context/GalleryContext";
 import ProgressBar from "@ramonak/react-progress-bar";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const GalleryDetails = () => {
   const { id } = useParams();
   const { data } = useGallery();
@@ -29,11 +30,18 @@ const GalleryDetails = () => {
     );
   };
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <section className="p-10 flex flex-col justify-between max-lg:pb-5 max-lg:p-0 mt-5  2xl:flex 2xl:items-center 2xl:justify-center font-custom">
         {data.map((item, index) => (
           <section
+            data-aos="fade-left"
+            data-aos-duration="3000"
+            data-aos-easing="ease-in-out"
             key={item.id}
             className={`${
               index === currentIndex ? "" : "hidden"
