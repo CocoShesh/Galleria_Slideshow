@@ -22,7 +22,7 @@ const Header = () => {
           </Link>
           <button
             onClick={handleStartSlideShow}
-            className="uppercase font-custom  text-sm  -tracking-tighter  2xl:mr-20 max-xl:mr-0 text-[#a3a3a3]"
+            className="uppercase font-custom  text-sm  -tracking-tighter max-sm:text-xs  2xl:mr-20 max-xl:mr-0 text-[#a3a3a3]"
           >
             {isSlideShow ? "stop slideshow" : "start slideshow"}
           </button>

@@ -37,7 +37,7 @@ const GalleryDetails = () => {
             key={item.id}
             className={`${
               index === currentIndex ? "" : "hidden"
-            } flex  items-center max-lg:flex-col   max-lg:px-5  gap-64 max-lg:h-fit 2xl:w-[1440px]  max-lg:gap-10  mb-32`}
+            } flex  items-center max-lg:flex-col   max-lg:px-3  gap-64 max-lg:h-fit 2xl:w-[1440px]  max-lg:gap-10  mb-32`}
           >
             <section className="relative w-fit   max-lg:w-full  max-lg:flex max-lg:items-center max-lg:justify-center ">
               <img
