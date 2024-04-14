@@ -50,7 +50,7 @@ const GalleryDetails = () => {
                 <p className="text-sm text-[#7d7f9c]">{item?.artist?.name}</p>
               </section>
 
-              <section className="absolute max-lg:h-[150px] max-lg:bottom-[-50px] max-lg:right-0 lg:bottom-[-10rem] right-0 text-black text-center ">
+              <section className="absolute max-lg:h-[150px] right-[-200px]  max-lg:bottom-[-50px] max-lg:right-0 bottom-[-50px] text-black text-center ">
                 <img
                   src={item?.artist?.image}
                   alt=""
