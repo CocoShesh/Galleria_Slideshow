@@ -46,7 +46,10 @@ const GalleryDetails = () => {
                 alt={item.name}
               />
               <section className="absolute w-[300px]  max-lg:bottom-0  max-lg:left-0  h-fit py-5 lg:top-[-5px] lg:right-[-200px] bg-white text-black text-center">
-                <h1 className="text-5xl font-bold">{item?.name}</h1> <br />
+                <h1 className="text-5xl max-sm:text-3xl font-bold">
+                  {item?.name}
+                </h1>{" "}
+                <br />
                 <p className="text-sm text-[#7d7f9c]">{item?.artist?.name}</p>
               </section>
 
