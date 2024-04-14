@@ -31,7 +31,7 @@ const GalleryDetails = () => {
 
   return (
     <>
-      <section className="p-10 flex flex-col justify-between border-4 border-red-500 max-lg:pb-5 max-lg:p-0  2xl:flex 2xl:items-center 2xl:justify-center font-custom">
+      <section className="p-10 flex flex-col justify-between max-lg:pb-5 max-lg:p-0 mt-5  2xl:flex 2xl:items-center 2xl:justify-center font-custom">
         {data.map((item, index) => (
           <section
             key={item.id}
