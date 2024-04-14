@@ -71,7 +71,7 @@ const GalleryDetails = () => {
             </section>
             <section className="lg:w-[600px] relative  flex flex-col justify-between   max-lg:w-full h-[500px]  md:h-[400px] ">
               <section className=" relative  ">
-                <span className="text-[11em] max-md:text-8xl absolute max-lg:top-0  top-[-50px] right-0 z-[-0] text-[#f3f3f3] ">
+                <span className="text-[11em] max-md:text-8xl absolute max-lg:top-0  top-[-50px] md:top-[-50px]  right-0 z-[-0] text-[#f3f3f3] ">
                   {item?.year}
                 </span>
               </section>
