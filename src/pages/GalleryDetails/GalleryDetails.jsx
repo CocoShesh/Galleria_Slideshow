@@ -2,8 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useGallery } from "../../context/GalleryContext";
 import ProgressBar from "@ramonak/react-progress-bar";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import UseAosAnimation from "../../hooks/UseAosAnimation";
 const GalleryDetails = () => {
   const { id } = useParams();
   const { data } = useGallery();
@@ -36,12 +35,7 @@ const GalleryDetails = () => {
     setImage(item);
   };
 
-  useEffect(() => {
-    AOS.init({
-      disable: "mobile",
-    });
-  }, []);
-
+  UseAosAnimation();
   return (
     <>
       <section
