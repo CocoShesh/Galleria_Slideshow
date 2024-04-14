@@ -1,5 +1,5 @@
 import { useContext, createContext, useState, useEffect } from "react";
-import { getData } from "../api/data";
+import { getData } from "../services/api/data";
 const GalleryContext = createContext();
 
 export const useGallery = () => {
