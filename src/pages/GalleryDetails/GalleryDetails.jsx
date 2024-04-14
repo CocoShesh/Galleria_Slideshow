@@ -9,7 +9,8 @@ const GalleryDetails = () => {
   const { data } = useGallery();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedItem, setSelectedItem] = useState(null);
-
+  const [isViewImage, setIsViewImage] = useState(false);
+  const [image, setImage] = useState("");
   useEffect(() => {
     const index = data.findIndex(item => item.id.toString() === id);
     setCurrentIndex(index !== -1 ? index : 0);
@@ -28,6 +29,11 @@ const GalleryDetails = () => {
     setSelectedItem(
       data[currentIndex === 0 ? data.length - 1 : currentIndex - 1]
     );
+  };
+
+  const handleViewImage = item => {
+    setIsViewImage(prevState => !prevState);
+    setImage(item);
   };
 
   useEffect(() => {
@@ -57,6 +63,13 @@ const GalleryDetails = () => {
                 src={item?.images?.hero?.large}
                 alt={item.name}
               />
+              <section
+                onClick={() => handleViewImage(item?.images?.hero?.large)}
+                className="w-62 h-12 px-5 py-3 absolute bottom-5 left-5 max-lg:top-5  cursor-pointer  hover:brightness-75 bg-black text-white flex justify-center items-center  gap-3"
+              >
+                <img src="/assets/shared/icon-view-image.svg" alt="" />
+                <span className="uppercase"> View Image </span>
+              </section>
               <section className="absolute w-[300px] max-sm:w-[250px] max-lg:bottom-0  max-lg:left-0  h-fit py-5 lg:top-[-5px] lg:right-[-200px] bg-white text-black text-center">
                 <h1 className="text-5xl max-sm:text-3xl font-bold">
                   {item?.name}
@@ -120,6 +133,24 @@ const GalleryDetails = () => {
           </section>
         </section>
       </section>
+
+      {isViewImage && (
+        <section className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 z-50  font-custom flex justify-center items-center">
+          <section className="relative h-[80%]">
+            <section
+              onClick={() => setIsViewImage(prevState => !prevState)}
+              className="absolute top-[-20px] right-5   uppercase tracking-wider text-lg  cursor-pointer text-white "
+            >
+              Close
+            </section>
+            <img
+              src={image}
+              alt="View Image"
+              className="h-[90%] mt-8 rounded-2xl"
+            />
+          </section>
+        </section>
+      )}
     </>
   );
 };
