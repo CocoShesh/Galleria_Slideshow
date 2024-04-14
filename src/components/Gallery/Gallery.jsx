@@ -7,7 +7,9 @@ const Gallery = () => {
   const { data } = useGallery();
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      disable: "mobile",
+    });
   }, []);
 
   return (

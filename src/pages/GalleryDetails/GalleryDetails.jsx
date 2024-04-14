@@ -31,17 +31,21 @@ const GalleryDetails = () => {
   };
 
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      disable: "mobile",
+    });
   }, []);
 
   return (
     <>
-      <section className="p-10 flex flex-col justify-between max-lg:pb-5 max-lg:p-0 mt-5  2xl:flex 2xl:items-center 2xl:justify-center font-custom">
+      <section
+        data-aos="fade-left"
+        data-aos-duration="3000"
+        data-aos-easing="ease-in-out"
+        className="p-10 flex flex-col justify-between max-lg:pb-5 max-lg:p-0 mt-5  2xl:flex 2xl:items-center 2xl:justify-center font-custom"
+      >
         {data.map((item, index) => (
           <section
-            data-aos="fade-left"
-            data-aos-duration="3000"
-            data-aos-easing="ease-in-out"
             key={item.id}
             className={`${
               index === currentIndex ? "" : "hidden"
