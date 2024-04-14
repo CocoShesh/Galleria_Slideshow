@@ -37,7 +37,7 @@ const GalleryDetails = () => {
             key={item.id}
             className={`${
               index === currentIndex ? "" : "hidden"
-            } flex  items-center max-lg:flex-col   max-lg:px-5  gap-36 max-lg:h-fit 2xl:w-[1440px]   max-lg:gap-10  mb-32`}
+            } flex  items-center max-lg:flex-col   max-lg:px-5  gap-64 max-lg:h-fit 2xl:w-[1440px]  max-lg:gap-10  mb-32`}
           >
             <section className="relative w-fit   max-lg:w-full  max-lg:flex max-lg:items-center max-lg:justify-center ">
               <img
@@ -58,17 +58,17 @@ const GalleryDetails = () => {
                 />
               </section>
             </section>
-            <section className="lg:w-[600px]   flex flex-col justify-between ml-28    max-lg:w-full h-[500px]">
+            <section className="lg:w-[600px] relative  flex flex-col justify-between border-4 border-red-500    max-lg:w-full lg:h-[500px] md:h-[350px] max-sm:h-[500px] ">
               <section className=" relative  ">
-                <span className="text-[11em] absolute   top-[-50px] right-20 z-[-0] text-[#f3f3f3] ">
+                <span className="text-[11em] absolute   top-[-50px] right-0 z-[-0] text-[#f3f3f3] ">
                   {item?.year}
                 </span>
               </section>
-              <section className=" lg:w-[550px]   max-lg:w-full  max-lg:right-[-20px]  max-lg:pl-10 pr-10 max-lg:pr-10  text-sm  absolute max-lg:left-0 pt-20 leading-6 text-[#a17d7d] font-bold">
+              <section className=" right-0  max-lg:pl-5 pr-10 max-lg:pr-10  text-sm  absolute  pt-20 leading-6 text-[#a17d7d] font-bold">
                 <p> {item?.description}</p>
               </section>
               <a href={item?.source} target="_blank" rel="noreferrer">
-                <span className="uppercase  text-xs   underline text-[#7d7fa0] hover:text-black">
+                <span className="uppercase  text-xs  pl-5  underline text-[#7d7fa0] hover:text-black">
                   Go To source
                 </span>
               </a>
