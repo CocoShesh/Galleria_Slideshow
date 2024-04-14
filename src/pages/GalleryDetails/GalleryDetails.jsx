@@ -85,7 +85,9 @@ const GalleryDetails = () => {
           />
           <section className="flex justify-between mt-10 max-lg:px-3">
             <section>
-              <h1 className="text-2xl font-bold">{selectedItem?.name}</h1>{" "}
+              <h1 className="text-2xl max-sm:text-lg font-bold">
+                {selectedItem?.name}
+              </h1>{" "}
               <br />
               <p className="text-sm text-[#7d7f9c]">
                 {selectedItem?.artist?.name}
