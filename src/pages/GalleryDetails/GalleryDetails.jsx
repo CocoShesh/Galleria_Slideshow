@@ -31,7 +31,7 @@ const GalleryDetails = () => {
 
   return (
     <>
-      <section className="p-10 flex flex-col justify-between max-lg:pb-5 max-lg:p-0  2xl:flex 2xl:items-center 2xl:justify-center font-custom">
+      <section className="p-10 flex flex-col justify-between border-4 border-red-500 max-lg:pb-5 max-lg:p-0  2xl:flex 2xl:items-center 2xl:justify-center font-custom">
         {data.map((item, index) => (
           <section
             key={item.id}
@@ -50,7 +50,7 @@ const GalleryDetails = () => {
                 <p className="text-sm text-[#7d7f9c]">{item?.artist?.name}</p>
               </section>
 
-              <section className="absolute w-[300px] h-[200px] max-lg:h-[150px] max-lg:bottom-[-50px] max-lg:right-[-140px]  lg:bottom-[-10rem] right-[-18rem] text-black text-center px-14">
+              <section className="absolute max-lg:h-[150px] max-lg:bottom-[-50px] max-lg:right-0 lg:bottom-[-10rem] right-0 text-black text-center ">
                 <img
                   src={item?.artist?.image}
                   alt=""
@@ -58,7 +58,7 @@ const GalleryDetails = () => {
                 />
               </section>
             </section>
-            <section className="w-[600px]  flex flex-col justify-between ml-28    max-lg:w-full h-[500px]">
+            <section className="lg:w-[600px]   flex flex-col justify-between ml-28    max-lg:w-full h-[500px]">
               <section className=" relative  ">
                 <span className="text-[11em] absolute   top-[-50px] right-20 z-[-0] text-[#f3f3f3] ">
                   {item?.year}
@@ -75,7 +75,7 @@ const GalleryDetails = () => {
             </section>
           </section>
         ))}
-        <section className="2xl:w-[1440px]">
+        <section className="2xl:w-[1440px] max-lg:w-full px-5">
           <ProgressBar
             completed={currentIndex}
             maxCompleted={data.length - 1}
