@@ -26,7 +26,7 @@ const Gallery = () => {
                   className="h-full w-full  rounded-lg cursor-pointer brightness-75 hover:brightness-100"
                   src={item?.images?.thumbnail}
                 />
-                <div className="absolute bottom-0 left-0 w-full  bg-opacity-50 text-white  py-4 px-3 ">
+                <div className="absolute bottom-0 left-0 w-full  bg-opacity-50 text-white  py-4 px-5 ">
                   <h2 className="text-xl font-bold">{item?.name}</h2>
                   <p className="text-sm">{item?.artist?.name}</p>
                 </div>
@@ -42,7 +42,7 @@ const Gallery = () => {
                   className="h-full w-full   rounded-lg cursor-pointer brightness-75 hover:brightness-100"
                   src={item?.images?.thumbnail}
                 />
-                <div className="absolute bottom-0 left-0 w-full  bg-opacity-50 text-white   py-4 px-3">
+                <div className="absolute bottom-0 left-0 w-full  bg-opacity-50 text-white   py-4 px-5">
                   <h2 className="text-xl font-bold">{item?.name}</h2>
                   <p className="text-sm">{item?.artist?.name}</p>
                 </div>
@@ -58,7 +58,7 @@ const Gallery = () => {
                   className="h-full w-full   rounded-lg  cursor-pointer brightness-75 hover:brightness-100"
                   src={item?.images?.thumbnail}
                 />
-                <div className="absolute bottom-0 left-0 w-full  bg-opacity-50 text-white   py-4 px-3">
+                <div className="absolute bottom-0 left-0 w-full  bg-opacity-50 text-white   py-4 px-5 ">
                   <h2 className="text-xl font-bold">{item?.name}</h2>
                   <p className="text-sm">{item?.artist?.name}</p>
                 </div>
@@ -74,7 +74,7 @@ const Gallery = () => {
                   className="h-full w-full   rounded-lg  cursor-pointer brightness-75 hover:brightness-100"
                   src={item?.images?.gallery}
                 />
-                <div className="absolute bottom-0 left-0 w-full  bg-opacity-50 text-white  py-4 px-3">
+                <div className="absolute bottom-0 left-0 w-full  bg-opacity-50 text-white  py-4 px-5">
                   <h2 className="text-xl font-bold">{item?.name}</h2>
                   <p className="text-sm">{item?.artist?.name}</p>
                 </div>
