@@ -45,7 +45,7 @@ const GalleryDetails = () => {
                 src={item?.images?.hero?.large}
                 alt={item.name}
               />
-              <section className="absolute w-[300px]  max-lg:bottom-0  max-lg:left-0  h-fit py-5 lg:top-[-5px] lg:right-[-200px] bg-white text-black text-center">
+              <section className="absolute w-[300px] max-sm:w-[250px] max-lg:bottom-0  max-lg:left-0  h-fit py-5 lg:top-[-5px] lg:right-[-200px] bg-white text-black text-center">
                 <h1 className="text-5xl max-sm:text-3xl font-bold">
                   {item?.name}
                 </h1>{" "}
