@@ -58,9 +58,9 @@ const GalleryDetails = () => {
                 />
               </section>
             </section>
-            <section className="lg:w-[600px] relative  flex flex-col justify-between border-4 border-red-500    max-lg:w-full lg:h-[500px] md:h-[350px] max-sm:h-[500px] ">
+            <section className="lg:w-[600px] relative  flex flex-col justify-between   max-lg:w-full h-[500px]  md:h-[400px] ">
               <section className=" relative  ">
-                <span className="text-[11em] absolute   top-[-50px] right-0 z-[-0] text-[#f3f3f3] ">
+                <span className="text-[11em] max-md:text-8xl absolute max-lg:top-0  top-[-50px] right-0 z-[-0] text-[#f3f3f3] ">
                   {item?.year}
                 </span>
               </section>
