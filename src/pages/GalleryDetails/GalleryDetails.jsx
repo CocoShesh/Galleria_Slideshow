@@ -140,7 +140,7 @@ const GalleryDetails = () => {
             <img
               src={image}
               alt="View Image"
-              className="h-[90%] mt-8 rounded-2xl"
+              className="h-[90%] max-sm:h-[50%] mx-10 mt-8 rounded-2xl"
             />
           </section>
         </section>
