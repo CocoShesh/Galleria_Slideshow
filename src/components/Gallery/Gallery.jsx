@@ -8,7 +8,7 @@ const Gallery = () => {
   UseAosAnimation();
 
   return (
-    <div className="2xl:flex 2xl:justify-center flex  justify-center items-center ">
+    <div className="2xl:flex 2xl:justify-center flex  justify-center items-center overflow-hidden ">
       <div
         data-aos="fade-left"
         data-aos-duration="3000"
