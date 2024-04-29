@@ -3,9 +3,9 @@
 This project is still a work in progress. The responsiveness for the details page has not been completed yet, but here's a glimpse of what has been achieved so far and the anticipated features.
 
 ## Preview
-
-![Image 1](https://github.com/CocoShesh/Galleria_Slideshow/assets/110368170/39363ab1-8530-4293-8802-762ca84650d1)
-![Image 2](https://github.com/CocoShesh/Galleria_Slideshow/assets/110368170/4a66c4e5-b5f6-4df1-b10e-af9da8a6c7ac)
+![Screenshot 2024-04-30 at 05-01-02 Galleria SlideShow](https://github.com/CocoShesh/Galleria_Slideshow/assets/110368170/bba098f1-b877-47b1-8d00-c60be4fb0fee)
+![Screenshot 2024-04-30 at 05-01-18 Galleria SlideShow](https://github.com/CocoShesh/Galleria_Slideshow/assets/110368170/b26df0d8-bb3f-486f-9bb7-a024be9b23f7)
+![Screenshot 2024-04-30 at 05-01-31 Galleria SlideShow](https://github.com/CocoShesh/Galleria_Slideshow/assets/110368170/ce264d6e-ab62-4114-9ff8-806dc2706cee)
 
 ## Features
 
